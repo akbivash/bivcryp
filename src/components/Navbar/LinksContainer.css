@@ -1,0 +1,88 @@
+.toplinks .links li {
+  list-style: none;
+  padding: 1rem;
+  display: none;
+}
+
+.icons {
+  display: flex;
+  gap: 1rem;
+}
+.icons li {
+  list-style: none;
+  font-size: 1.7rem;
+  cursor: pointer;
+}
+.icons .wallet,
+.icons .user {
+  display: none;
+}
+.hidden_links {
+  position: fixed;
+  width: 100%;
+  z-index: 99;
+  background: #fff;
+  border-radius: 10px;
+  /* padding: 1rem; */
+  left: 0;
+  overflow-y: hidden;
+}
+.mainlinks_container {
+  position: relative;
+  display: grid;
+  gap: 2rem;
+  margin-top: 18vh;
+  width: 100%;
+}
+
+.connect_wallet {
+  background: var(--secondary);
+  color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 0 1rem;
+
+  /* width: 70%; */
+  text-align: center;
+}
+
+.mainlinks_container .links span i {
+  margin-right: 1rem;
+}
+
+.mainlinks_container .links li {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding: 1rem;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.social_links {
+  text-align: center;
+  margin: 1rem;
+}
+.mainlinks_container .social_links li {
+  display: inline;
+  margin: 0 1rem;
+}
+.mainlinks_container .links li:hover {
+  background: #ddd;
+  transition: 0.3s ease;
+  padding-left: 2rem;
+}
+
+@media screen and (min-width: 1000px) {
+  .icons .wallet,
+  .icons .user {
+    display: block;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .toplinks .links li {
+    display: inline;
+  }
+  .bars {
+    display: none;
+  }
+}

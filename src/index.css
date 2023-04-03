@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&family=Shadows+Into+Light&display=swap');
+
+:root{
+  --primary:rgb(96, 151, 227);
+  --primary-1:  #3b7dc0;
+  --primary-2: rgb(8, 99, 227);
+  --secondary:rgb(74, 69, 114);
+  --secondary-1: rgb(142, 139, 165);
+  --dark:rgb(19, 16, 46);
+  --dark-1:rgb(9, 4, 40);
+  --white:rgb(204, 205, 205);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+    
+}
+
+body{
+  background: var(--dark);
+}
+
+.app_main{
+  max-width: 1400px;
+  display:grid;
+  gap:2rem;
+place-items: center;
+margin: 0 auto;
+padding:12vh 10px 10px 10px;
+
+}
