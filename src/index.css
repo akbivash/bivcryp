@@ -3,11 +3,10 @@
 :root{
   --primary:rgb(96, 151, 227);
   --primary-1:  #3b7dc0;
-  --primary-2: rgb(8, 99, 227);
   --secondary:rgb(74, 69, 114);
-  --secondary-1: rgb(142, 139, 165);
-  --dark:rgb(19, 16, 46);
-  --dark-1:rgb(9, 4, 40);
+  --secondary-1: rgb(153, 152, 157);
+  --dark:rgb(9, 5, 41);
+  --dark-1:rgb(18, 13, 55);
   --white:rgb(204, 205, 205);
 }
 
@@ -27,8 +26,14 @@ body{
   max-width: 1400px;
   display:grid;
   gap:2rem;
-place-items: center;
 margin: 0 auto;
-padding:12vh 10px 10px 10px;
+padding-top: 12vh;
+/* padding:12vh 10px 10px 10px; */
 
+}
+@media screen and (min-width:920px) {
+ body .homepage,
+ body .about{
+    padding: 2rem;
+  }
 }
