@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&family=Shadows+Into+Light&display=swap');
 
 :root{
-  --primary:rgb(96, 151, 227);
-  --primary-1:  #3b7dc0;
+  --primary:rgb(64, 159, 203);
+  --primary-1:  #0c62b8;
   --secondary:rgb(74, 69, 114);
-  --secondary-1: rgb(153, 152, 157);
-  --dark:rgb(9, 5, 41);
-  --dark-1:rgb(18, 13, 55);
+  --secondary-1: rgb(29, 26, 43);
+  --dark:rgb(6, 1, 18);
+  --dark-1:rgb(11, 12, 22);
   --white:rgb(204, 205, 205);
 }
 
@@ -20,6 +20,8 @@
 
 body{
   background: var(--dark);
+  box-sizing: border-box;
+
 }
 
 .app_main{
@@ -28,12 +30,15 @@ body{
   gap:2rem;
 margin: 0 auto;
 padding-top: 12vh;
-/* padding:12vh 10px 10px 10px; */
 
 }
 @media screen and (min-width:920px) {
  body .homepage,
- body .about{
+ body .about,
+ body .sales,
+ body #roadmap,
+ body .why_us
+ {
     padding: 2rem;
   }
 }

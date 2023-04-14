@@ -20,7 +20,7 @@ const Homepage = () => {
   }, [])
 
   const getTimeDifference = () => {
-  const targetEndTime = new Date("Mar 7, 2023 6:00"); // Target end time
+  const targetEndTime = new Date("Apr 7, 2023 6:00"); // Target end time
 
     const currentTime = new Date().getTime(); // Current time in milliseconds
     const difference = targetEndTime - currentTime; // Time difference in milliseconds

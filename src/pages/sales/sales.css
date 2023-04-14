@@ -1,0 +1,70 @@
+.sales{
+    color:var(--white);
+    display: grid;
+    gap: 3rem;
+    padding: 1rem;
+}
+.sales .heading{
+    display: grid;
+    gap: 1.5rem;
+    font-size: 1.4rem;
+}
+.sales .heading span{
+    position: relative;
+    padding-left: 110px;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+.sales .heading span::before{
+    position: absolute;
+    content: "";
+    width: 100px;
+    height: 1px;
+    background: #fff;
+    bottom: 4px;
+    left: 0px;
+}
+.sales .heading h1{
+    /* font-size: ; */
+}
+.sales .section_1{
+    display: grid;
+    gap: 2rem;
+}
+.sales .section_1 .item{
+    position: relative;
+    padding: 1rem;
+    display: grid;
+    gap: 1rem;
+font-size: 1.2rem;
+}
+.sales .section_1 .item::after{
+    position: absolute;
+    content: "";
+    z-index: -9;
+    width: 1%;
+    border-radius: 5px;
+
+    height: 100%;
+    background: linear-gradient(to right, var(--primary-1),var(--primary-1), rgba(0,0,0,0.4));
+
+}
+.sales .section_1 .item:nth-child(1)::after{
+    width: 100%;
+    background: linear-gradient(to right, var(--primary-1),var(--primary-1), rgba(0,0,0,0.4));
+}
+.sales .section_1 .item:hover::after{
+    /* background: linear-gradient(to right, var(--primary-1),var(--primary-1), rgba(0,0,0,0.4)); */
+transition: .3s;
+width: 100%;
+}
+
+@media screen and (min-width:780px) {
+    .sales{
+        gap: 4rem;
+        /* padding-bottom: 2rem; */
+    }
+    .sales .section_1{
+        grid-template-columns: repeat(3,1fr);
+    }
+}

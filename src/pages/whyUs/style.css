@@ -1,0 +1,47 @@
+.why_us {
+    color: var(--white);
+    padding: 1rem;
+}
+.why_us .heading{
+    /* font-size: 1.3rem; */
+    font-weight: 600;
+    position: relative;
+    padding-left: 110px;
+}
+.why_us .heading::before{
+    position: absolute;
+    content: "";
+    width: 100px;
+    height: 2px;
+    left: 0;
+    background: var(--white);
+    bottom: 3px;
+}
+.why_us section{
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+}
+.why_us section .item{
+    display: grid;
+    letter-spacing: 1px;
+    font-weight: 600;
+    gap: 2rem;
+    padding: 2rem;
+    border-radius: 5px;
+}
+.why_us section .item:hover{
+    background: var(--primary-1);
+    transition: .5s;
+
+}
+
+.why_us section .item img{
+width: 5rem;
+height: 5rem;
+object-fit: cover;
+}
+@media screen and (min-width:780px) {
+    .why_us section{
+    }
+}

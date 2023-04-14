@@ -1,0 +1,92 @@
+.contact{
+    color: var(--white);
+    display: grid;
+    gap: 3rem;
+    padding: 1rem;
+}
+.contact .heading{
+    text-align: center;
+    display: grid;
+    gap: 2rem;
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+.contact .info{
+    display: grid;
+    gap: 2rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding: 0 2rem;
+    max-width: 1200px;
+}
+.contact .info span{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+.contact .info span i{
+    background: var(--primary-1);
+    padding: 1rem;
+    font-size: 1.4rem;
+    border-radius: 50%;
+    display: grid;
+}
+.contact form{
+    display: grid;
+    gap: 2rem;
+    max-width: 900px;
+margin: 0 auto;
+margin-top: 3rem;
+
+width: 100%;
+}
+.contact form input, textarea{
+    padding: 1rem;
+    outline: none;
+    border:none;
+    background: var(--dark-1);
+    resize: none;
+    color: aliceblue;
+}
+.contact form .field{
+    display: grid;
+    gap: 1rem;
+}
+form input::placeholder, textarea::placeholder{
+    font-size: 1.2rem;
+    color: aliceblue;
+    opacity: .8;
+   
+}
+form button{
+    padding: 1rem;
+    width: fit-content;
+    /* max-width: 200px; */
+    margin: 0 auto;
+    background: var(--primary-1);
+    border: none;
+    color: aliceblue;
+    border-radius: 5px;
+    font-size: 1.1rem;
+
+}
+@media screen and (min-width:780px) {
+   .contact form .field{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+   } 
+   .contact .field input, textarea{
+    width: 100%;
+   }
+}
+@media screen and (min-width:900px) {
+    .contact .info{
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        width: 100%;
+    }
+   
+}

@@ -3,7 +3,7 @@ import './footer.css'
 const Footer = () => {
   return (
     <div className='footer'>
-<span>@2023 CloseSea, Inc</span>
+<span>Copyright © 2021. All rights reserved by BivCryp</span>
     </div>
   )
 }
