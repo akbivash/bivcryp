@@ -27,47 +27,47 @@ const Faq = () => {
             </div>
 
             <section>
-               <div className="faq_items mobile">
-               {faqs.map(item => {
+                <div className="faq_items mobile">
+                    {faqs.map(item => {
 
-return <div className="faq_item" key={item.id}>
-    <span className={`${isSelectedTopic === item.title ? 'faq_topic active':'faq_topic'}`} onClick={() => setIsSelectedTopic(item.title)}>{item.title}</span>
-    <div className='faq_details'>
-        {item.details.map(d => {
+                        return <div className="faq_item" key={item.id}>
+                            <span className={`${isSelectedTopic === item.title ? 'faq_topic active' : 'faq_topic'}`} onClick={() => setIsSelectedTopic(item.title)}>{item.title}</span>
+                            <div className='faq_details'>
+                                {item.details.map(d => {
 
-            if (isSelectedTopic === item.title) {
-                return <div className="q_a " key={d.question}>
-                    <span className={`${showAnswer && questionId === d.question ? 'q active' : 'q'}`} onClick={() => handleQuestion(d.question)}>{d.question} <i>{showAnswer && questionId === d.question ? <FiArrowUp /> : <FiArrowDown />}</i></span>
-                    <span className={`${showAnswer && questionId === d.question ? 'a active' : 'a'}`}>{d.answer}</span>
+                                    if (isSelectedTopic === item.title) {
+                                        return <div className="q_a " key={d.question}>
+                                            <span className={`${showAnswer && questionId === d.question ? 'q active' : 'q'}`} onClick={() => handleQuestion(d.question)}>{d.question} <i>{showAnswer && questionId === d.question ? <FiArrowUp /> : <FiArrowDown />}</i></span>
+                                            <span className={`${showAnswer && questionId === d.question ? 'a active' : 'a'}`}>{d.answer}</span>
+                                        </div>
+                                    }
+                                })}
+                            </div>
+                        </div>
+                    })}
                 </div>
-            }
-        })}
-    </div>
-</div>
-})}
-               </div>
-{/* desktop */}
-<div className="faq_items desktop">
-  <div className="faq_topics">
-   {faqs.map(item => {
-        return   <span key={item.title} className={`${isSelectedTopic === item.title ? 'faq_topic active':'faq_topic'}`} onClick={() => setIsSelectedTopic(item.title)}>{item.title}</span>
-    })}
-   </div>
-   <div className='faq_details'>
-       {faqs.map(f => {
-     return   f.details.map(d => {
+                {/* desktop */}
+                <div className="faq_items desktop">
+                    <div className="faq_topics">
+                        {faqs.map(item => {
+                            return <span key={item.title} className={`${isSelectedTopic === item.title ? 'faq_topic active' : 'faq_topic'}`} onClick={() => setIsSelectedTopic(item.title)}>{item.title}</span>
+                        })}
+                    </div>
+                    <div className='faq_details'>
+                        {faqs.map(f => {
+                            return f.details.map(d => {
 
-          if(f.title === isSelectedTopic){
-            return <div className="q_a " key={d.question}>
-            <span className={`${showAnswer && questionId === d.question ? 'q active' : 'q'}`} onClick={() => handleQuestion(d.question)}>{d.question} <i>{showAnswer && questionId === d.question ? <FiArrowUp /> : <FiArrowDown />}</i></span>
-            <span className={`${showAnswer && questionId === d.question ? 'a active' : 'a'}`}>{d.answer}</span>
-        </div> 
-          }
-        })
-       })}
-    </div>
-  </div>
-  <img src="https://demo.ovatheme.com/cryptlight/wp-content/uploads/2021/08/faq.png" alt="" />
+                                if (f.title === isSelectedTopic) {
+                                    return <div className="q_a " key={d.question}>
+                                        <span className={`${showAnswer && questionId === d.question ? 'q active' : 'q'}`} onClick={() => handleQuestion(d.question)}>{d.question} <i>{showAnswer && questionId === d.question ? <FiArrowUp /> : <FiArrowDown />}</i></span>
+                                        <span className={`${showAnswer && questionId === d.question ? 'a active' : 'a'}`}>{d.answer}</span>
+                                    </div>
+                                }
+                            })
+                        })}
+                    </div>
+                </div>
+                <img src="https://demo.ovatheme.com/cryptlight/wp-content/uploads/2021/08/faq.png" alt="" />
 
             </section>
         </div>

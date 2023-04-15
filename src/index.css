@@ -44,3 +44,9 @@ padding-top: 12vh;
     padding: 2rem;
   }
 }
+
+li{
+  list-style:none;
+  color:#fff;
+  cursor:pointer;
+}

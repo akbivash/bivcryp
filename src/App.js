@@ -10,7 +10,12 @@ import Footer from './components/footer/Footer'
 import Sales from './pages/sales/Sales'
 import Contact from './pages/contact/Contact'
 import Faq from './pages/faq/Faq'
+
 const App = () => {
+
+function handleScroll(){
+  
+}
 
   return (
     <>
@@ -18,8 +23,12 @@ const App = () => {
         <div className="app">
           <Navbar />
           <div className="app_main">
+            <div className="homepage">
             <Homepage />
-            <About />
+            </div>
+           <div className="about">
+           <About />
+           </div>
             <Sales/>
 <WhyUs/>
 <Roadmap/>

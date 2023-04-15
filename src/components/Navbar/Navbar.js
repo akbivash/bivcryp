@@ -6,18 +6,18 @@ import { FiChevronDown } from 'react-icons/fi'
 
 
 import { GoThreeBars } from 'react-icons/go'
-import { Link } from 'react-router-dom'
+import { li } from 'react-router-dom'
 import Sidebar from './Sidebar'
 
 const Navbar = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false)
 
-  const handleLinks = () => {
+  const handlelis = () => {
     setIsSidebarOpen(!isSidebarOpen)
   }
 
 
-  const closeLinks = () => {
+  const closelis = () => {
     setIsSidebarOpen(false)
   }
 
@@ -28,20 +28,21 @@ const Navbar = () => {
 <div className="nav_wrapper">
   
 <div className="navbar_left">
-          <Link to='/' className="logo" onClick={closeLinks}>Biv<span>Cryp</span></Link>
-          <ul className="links">
-            <Link>About</Link>
-            <Link>Sales</Link>
-            <Link>Roadmap</Link>
-            <Link>Team</Link>
-            <Link>Contact</Link>
+          <li to='/' className="logo" onClick={closelis}>Biv<span>Cryp</span></li>
+          <ul className="lis">
+            <li >About</li>
+            <li>Sales</li>
+            <li>Roadmap</li>
+            <li>FAQ</li>
+            <li>Contact</li>
+            <li>Why Us</li>
           </ul>
         </div>
 
 
         <div className='navbar_right'>
 
-          <li className='bars' onClick={handleLinks}>{isSidebarOpen ? <FaTimes /> : <GoThreeBars />}</li>
+          <li className='bars' onClick={handlelis}>{isSidebarOpen ? <FaTimes /> : <GoThreeBars />}</li>
           <li className='buy'>Buy Now</li>
           <li className="lang">
             EN <FiChevronDown />
