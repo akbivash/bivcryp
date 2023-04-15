@@ -9,6 +9,7 @@ import WhyUs from './pages/whyUs/index'
 import Footer from './components/footer/Footer'
 import Sales from './pages/sales/Sales'
 import Contact from './pages/contact/Contact'
+import Faq from './pages/faq/Faq'
 const App = () => {
 
   return (
@@ -22,6 +23,7 @@ const App = () => {
             <Sales/>
 <WhyUs/>
 <Roadmap/>
+<Faq/>
 <Contact/>
 <Footer/>
 

@@ -2,10 +2,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 2rem 0;
+    text-align: center;
+    
+    padding: 2rem ;
     background: var(--dark-1);
     color: aliceblue;
     letter-spacing: 2px;
-  margin-top:2rem;
   border-top:1px solid var(--secondary)
 }

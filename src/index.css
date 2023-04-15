@@ -37,7 +37,9 @@ padding-top: 12vh;
  body .about,
  body .sales,
  body #roadmap,
- body .why_us
+ body .why_us,
+ body .faq_container,
+ body .contact
  {
     padding: 2rem;
   }
