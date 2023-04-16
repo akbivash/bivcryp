@@ -1,7 +1,7 @@
 .why_us {
     color: var(--white);
-    padding: 1rem;
-    
+    /* padding: 1rem; */
+    /* background: red; */
 }
 .why_us .heading{
     /* font-size: 1.3rem; */

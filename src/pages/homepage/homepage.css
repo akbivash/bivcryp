@@ -58,7 +58,7 @@ place-items: center;
     color: white;
 }
 .homepage .section_2 .timer div span:nth-child(2){
-  color: var(--secondary);
+  color: var(--secondary-1);
  
  
 

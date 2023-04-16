@@ -2,7 +2,7 @@ import React from 'react'
 import './roadmap.css'
 const Roadmap = () => {
     return (
-        <div id='roadmap'>
+        <div className='roadmap'>
           
           <h3 className='heading'>Road Map</h3>
             <h1 className='sub_heading'>Our Strategy & Project Plan</h1>

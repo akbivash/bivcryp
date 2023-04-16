@@ -6,54 +6,49 @@ import { FiChevronDown } from 'react-icons/fi'
 
 
 import { GoThreeBars } from 'react-icons/go'
-import { li } from 'react-router-dom'
 import Sidebar from './Sidebar'
+import { navLinks } from '../../data'
 
-const Navbar = () => {
-  const [isSidebarOpen, setIsSidebarOpen] = useState(false)
+const Navbar = ({ handleScroll, handleLinks, closeLinks, isSidebarOpen }) => {
 
-  const handlelis = () => {
-    setIsSidebarOpen(!isSidebarOpen)
-  }
-
-
-  const closelis = () => {
-    setIsSidebarOpen(false)
-  }
 
 
   return (
     <>
       <nav >
-<div className="nav_wrapper">
-  
-<div className="navbar_left">
-          <li to='/' className="logo" onClick={closelis}>Biv<span>Cryp</span></li>
-          <ul className="lis">
-            <li >About</li>
-            <li>Sales</li>
-            <li>Roadmap</li>
-            <li>FAQ</li>
-            <li>Contact</li>
-            <li>Why Us</li>
-          </ul>
+        <div className="nav_wrapper">
+
+          <div className="navbar_left">
+            <a to='/' className="logo" onClick={() => {
+              closeLinks()
+              window.scrollTo({
+                top:0,
+                left:0,
+                behavior:'smooth'
+              })
+            }}>Biv<span>Cryp</span></a>
+            <ul className="links">
+              {navLinks.map(link => {
+                return <a href={link.link} key={link.link} onClick={handleScroll}>{link.title}</a>
+              })}
+            </ul>
+          </div>
+
+
+          <div className='navbar_right'>
+
+            <li className='bars' onClick={handleLinks}>{isSidebarOpen ? <FaTimes /> : <GoThreeBars />}</li>
+            <li className='buy'>Buy Now</li>
+            <li className="lang">
+              EN <FiChevronDown />
+            </li>
+          </div>
         </div>
-
-
-        <div className='navbar_right'>
-
-          <li className='bars' onClick={handlelis}>{isSidebarOpen ? <FaTimes /> : <GoThreeBars />}</li>
-          <li className='buy'>Buy Now</li>
-          <li className="lang">
-            EN <FiChevronDown />
-          </li>
-        </div>
-</div>
 
 
       </nav>
-      <Sidebar isSidebarOpen={isSidebarOpen} />
-<div className={`${isSidebarOpen ? "blur active": "blur"}`}></div>
+      <Sidebar isSidebarOpen={isSidebarOpen} handleScroll={handleScroll} closelinks={closeLinks} />
+      <div className={`${isSidebarOpen ? "blur active" : "blur"}`}></div>
 
     </>
   )

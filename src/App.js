@@ -12,29 +12,70 @@ import Contact from './pages/contact/Contact'
 import Faq from './pages/faq/Faq'
 
 const App = () => {
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false)
 
-function handleScroll(){
-  
-}
+  const handleLinks = () => {
+    setIsSidebarOpen(!isSidebarOpen)
+  }
+
+
+  const closeLinks = () => {
+    setIsSidebarOpen(false)
+  }
+
+  function handleScroll(e) {
+    e.preventDefault()
+    const id = e.target.getAttribute('href')
+    const elem = document.getElementById(id)
+    const pos = elem.offsetTop
+    if (isSidebarOpen) {
+      closeLinks()
+      setTimeout(() => {
+        window.scrollTo({
+          left: 0,
+          top: pos - 60,
+          behavior: 'smooth'
+        })
+
+      }, 500)
+    } else {
+      window.scrollTo({
+        top: pos - 60,
+        left: 0,
+        behavior: 'smooth'
+      })
+    }
+
+  }
 
   return (
     <>
       <BrowserRouter>
         <div className="app">
-          <Navbar />
+          <Navbar handleScroll={handleScroll} handleLinks={handleLinks} closeLinks={closeLinks} isSidebarOpen={isSidebarOpen} />
           <div className="app_main">
-            <div className="homepage">
-            <Homepage />
+            <div id="homepage">
+              <Homepage />
             </div>
-           <div className="about">
-           <About />
+            <div id="about">
+              <About />
+            </div>
+            <div id="sales">
+              <Sales />
+            </div>
+          <div id="why_us">
+          <WhyUs />
+          </div>
+           <div id="roadmap">
+           <Roadmap />
            </div>
-            <Sales/>
-<WhyUs/>
-<Roadmap/>
-<Faq/>
-<Contact/>
-<Footer/>
+          <div id="faq">
+          <Faq />
+          </div>
+           <div id="contact">
+           <Contact />
+           </div>
+            <Footer />
 
           </div>
         </div>

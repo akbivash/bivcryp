@@ -2,11 +2,11 @@
 
 :root{
   --primary:rgb(64, 159, 203);
-  --primary-1:  #0c62b8;
-  --secondary:rgb(74, 69, 114);
-  --secondary-1: rgb(29, 26, 43);
+  --primary-1:  #2d73b8;
+  --secondary:rgb(85, 81, 112);
+  --secondary-1: rgb(119, 117, 129);
   --dark:rgb(6, 1, 18);
-  --dark-1:rgb(11, 12, 22);
+  --dark-1:rgb(21, 22, 36);
   --white:rgb(204, 205, 205);
 }
 
@@ -27,7 +27,7 @@ body{
 .app_main{
   max-width: 1400px;
   display:grid;
-  gap:2rem;
+  /* gap:2rem; */
 margin: 0 auto;
 padding-top: 12vh;
 
@@ -48,5 +48,8 @@ padding-top: 12vh;
 li{
   list-style:none;
   color:#fff;
+  cursor:pointer;
+}
+a{
   cursor:pointer;
 }

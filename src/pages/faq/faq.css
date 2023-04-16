@@ -99,26 +99,22 @@
     display: flex;
     width: 100%;
     gap: 1rem;
-
+    justify-content: center;
   }
   .faq_container .faq_items.desktop {
     position: relative;
-   display: grid;
- 
+    display: grid;
   }
-  .faq_container .faq_items.desktop .faq_details{
-   position: relative;
-   /* display: grid;
-   place-items: start; */
-   display: flex;
-   flex-direction: column;
-   /* justify-content: flex-start; */
-   height: 300px;
-   overflow-y: scroll;
+  .faq_container .faq_items.desktop .faq_details {
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    overflow-y: scroll;
+    font-size: 1.2rem;
   }
   .faq_container .faq_items.desktop .faq_topics {
     margin-bottom: 3rem;
-    /* height: fit-content; */
+    font-size: 1.7rem;
   }
   .faq_container section img {
     flex: 1;
@@ -133,21 +129,16 @@
   .faq_container .faq_items .faq_topics {
     display: flex;
     gap: 2rem;
-
   }
 }
 
-
-.faq_container .faq_items.desktop .faq_details::-webkit-scrollbar{
-    width: 5px;
-    background: var(--secondary);
-
+.faq_container .faq_items.desktop .faq_details::-webkit-scrollbar {
+  width: 5px;
+  background: var(--secondary);
 }
-.faq_container .faq_items.desktop .faq_details::-webkit-scrollbar-track{
-    background: var(--primary);
+.faq_container .faq_items.desktop .faq_details::-webkit-scrollbar-track {
+  background: var(--primary);
 }
-.faq_container .faq_items.desktop .faq_details::-webkit-scrollbar-thumb{
-    background: var(--secondary);
-
-
+.faq_container .faq_items.desktop .faq_details::-webkit-scrollbar-thumb {
+  background: var(--secondary);
 }

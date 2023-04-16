@@ -1,5 +1,6 @@
-#roadmap{
+.roadmap{
   padding:1rem 0;
+  margin-top: -2rem;
   border-top: 1px solid var(--secondary);
 }
 .roadmap_wrapper{
@@ -39,11 +40,11 @@ color: var(--white);
   height: 100%;
   top: 0;
   left: 0;
-  border-left: 2px dashed var(--primary);
+  border-left: 2px dashed var(--secondary-1);
   }
 
 .timeline_items .timeline_item .timeline_info{
-    background: var(--secondary-1);
+    background: var(--dark-1);
     padding: 1rem;
     display: grid;
     gap: 2rem;
@@ -91,7 +92,7 @@ content: "";
 left: 0;
 bottom: 0;
 width: 100%;
-border-bottom: 2px dashed var(--primary);
+border-bottom: 2px dashed var(--secondary-1);
 }
 
 
