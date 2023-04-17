@@ -14,19 +14,7 @@ export const faqs = [
             {
                 question: 'How to get started?',
                 answer: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet, dolorum.'
-            },
-            {
-                question: 'What  BivCryp?',
-                answer: 'BivCryp is the cryptocurrency industry’s equivalent to an initial public offering and is launched to raise funds.'
-            },
-            {
-                question: 'w this works?',
-                answer: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet, dolorum.'
-            },
-            {
-                question: 'Hw to get started?',
-                answer: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet, dolorum.'
-            },
+            }
         ]
 
     },

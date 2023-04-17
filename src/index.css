@@ -20,17 +20,16 @@
 
 body{
   background: var(--dark);
-  box-sizing: border-box;
 
 }
 
 .app_main{
   max-width: 1400px;
   display:grid;
-  /* gap:2rem; */
+  gap:2rem;
 margin: 0 auto;
 padding-top: 12vh;
-
+/* width:100%; */
 }
 @media screen and (min-width:920px) {
  body .homepage,

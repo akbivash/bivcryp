@@ -1,7 +1,8 @@
 .why_us {
     color: var(--white);
-    /* padding: 1rem; */
-    /* background: red; */
+    padding: 1rem;
+  border-bottom: 1px solid var(--secondary);
+
 }
 .why_us .heading{
     /* font-size: 1.3rem; */
@@ -29,7 +30,7 @@
     letter-spacing: 1px;
     font-weight: 600;
     gap: 2rem;
-    padding: 2rem;
+    padding:  2rem;
     border-radius: 5px;
 }
 .why_us section .item:hover{

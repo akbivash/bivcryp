@@ -5,8 +5,6 @@
     text-align: center;
     
     padding: 2rem ;
-    background: var(--dark-1);
     color: aliceblue;
-    letter-spacing: 2px;
   border-top:1px solid var(--secondary)
 }

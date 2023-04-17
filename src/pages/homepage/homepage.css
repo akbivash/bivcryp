@@ -17,6 +17,7 @@ padding-top: 2rem;
 }
 .homepage .section_1 span{
     letter-spacing: 1px;
+    font-weight: 600;
 }
 .homepage .section_1 img{
     margin-top: 1rem;
@@ -30,7 +31,7 @@ padding-top: 2rem;
     border-radius: 10px;
     background: var(--dark-1);
     display: grid;
-    
+    padding: 10px;
 }
 .homepage .section_2 .top{
     display: grid;

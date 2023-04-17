@@ -1,7 +1,5 @@
 .roadmap{
   padding:1rem 0;
-  margin-top: -2rem;
-  border-top: 1px solid var(--secondary);
 }
 .roadmap_wrapper{
     color: var(--white);
