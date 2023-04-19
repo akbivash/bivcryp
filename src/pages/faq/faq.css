@@ -91,7 +91,6 @@
 .faq_container section img {
   margin-top: 2rem;
   width: 100%;
-  max-width: 500px;
 }
 
 @media screen and (min-width: 1020px) {
@@ -100,10 +99,13 @@
     width: 100%;
     gap: 1rem;
     justify-content: center;
+
   }
   .faq_container .faq_items.desktop {
     position: relative;
     display: grid;
+
+    flex: 1;
   }
   .faq_container .faq_items.desktop .faq_details {
     display: flex;
@@ -114,11 +116,11 @@
   }
   .faq_container .faq_items.desktop .faq_topics {
     margin-bottom: 3rem;
-    font-size: 1.7rem;
+    font-size: 1.4rem;
   }
   .faq_container section img {
-    flex: 1;
     width: 100%;
+    max-width: 500px;
   }
   .faq_container .faq_items.mobile {
     display: none;

@@ -143,7 +143,7 @@ border-bottom: 2px dashed var(--secondary-1);
     top: calc(3rem  + 4rem);
     right: 0;
     width: 2px;
-    border-right: 2px dashed var(--primary);
+    border-right: 2px dashed var(--secondary-1);
   }
   .roadmap_wrapper .timeline_row:nth-child(2)::after{
     left: -2px;
