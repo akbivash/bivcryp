@@ -37,7 +37,7 @@ const About = () => {
        <i> <AiOutlineStar/></i>
         </span>
         <div className="details">
-          <h3>Rewards MeAchanism</h3>
+          <h3>Rewards Mechanism</h3>
           <p>The system pay a bonus for excellent individuals</p>
         </div>
         </div>

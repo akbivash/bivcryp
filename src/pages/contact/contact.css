@@ -2,12 +2,12 @@
     color: var(--white);
     display: grid;
     gap: 3rem;
-    padding:0 1rem;
+    padding: 1rem;
 }
 .contact .heading{
     text-align: center;
     display: grid;
-    gap: 2rem;
+    gap: 1rem;
     font-weight: 600;
     font-size: 1.3rem;
 }
@@ -81,7 +81,7 @@ form button{
     width: 100%;
    }
 }
-@media screen and (min-width:900px) {
+@media screen and (min-width:920px) {
     .contact .info{
         display: flex;
         justify-content: space-between;
