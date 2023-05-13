@@ -12,10 +12,11 @@ const Homepage = () => {
   const ref = useRef()
 
 
+
   useEffect(() => {
+    handleScroll()
     startTimer();
     window.addEventListener('scroll', handleScroll)
-
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
@@ -30,7 +31,6 @@ const Homepage = () => {
     );
     const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
     const seconds = Math.floor((difference % (1000 * 60)) / 1000);
-
     return { days, hours, minutes, seconds };
   };
 
@@ -48,14 +48,15 @@ const Homepage = () => {
         })
       }
     }, 1000);
-
-   
   };
 
   function handleScroll(e) {
     let rect = ref.current.getBoundingClientRect()
     if (rect.top - window.innerHeight < 0) {
       setIsInView(true)
+    }else{
+      setIsInView(false)
+
     }
   }
 
