@@ -1,10 +1,10 @@
 import React, { useState } from 'react'
-import './Navbar.css'
+import './navbar.css'
 import { FaTimes } from 'react-icons/fa'
 import { FiChevronDown } from 'react-icons/fi'
 import { GoThreeBars } from 'react-icons/go'
-import Sidebar from './Sidebar'
-import { navLinks } from '../../data'
+import Sidebar from '../Sidebar'
+import { navLinks } from '../../assets/data'
 import { handleScroll } from '../../utils/handleScroll'
 
 const Navbar = () => {
@@ -13,7 +13,7 @@ const Navbar = () => {
     isSidebarOpen,
     setIsSidebarOpen
   }
-const { scrollToTop, handleLinks, closeLinks} = handleScroll(handleScrollProps)
+  const { scrollToTop, handleLinks, closeLinks } = handleScroll(handleScrollProps)
 
 
 
@@ -45,10 +45,9 @@ const { scrollToTop, handleLinks, closeLinks} = handleScroll(handleScrollProps)
             </li>
           </div>
         </div>
-
       </nav>
 
-      <Sidebar  props={handleScrollProps}/>
+      <Sidebar props={handleScrollProps} />
       <div className={`${isSidebarOpen ? "blur active" : "blur"}`}></div>
 
     </>

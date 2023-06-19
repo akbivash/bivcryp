@@ -1,0 +1,37 @@
+.sidebar {
+  left: -100%;
+  top: 10vh;
+  z-index: 9999;
+  position: fixed;
+  background: var(--dark);
+  padding: 2rem;
+  width: 100%;
+  max-width: 300px;
+  transition: 0.4s;
+  min-height: 100vh;
+}
+.sidebar .links {
+  display: grid;
+}
+.sidebar.active {
+  left: 0;
+  transition: 0.4s;
+}
+
+.blur.active {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 9;
+  transition: 0.4s;
+  backdrop-filter: blur(2px);
+}
+.sidebar .links * {
+  color: #fff;
+  border-bottom: 1px solid var(--primary-2);
+  text-decoration: none;
+  padding: 5px;
+}

@@ -1,7 +1,7 @@
 .why_us {
     color: var(--white);
     padding: 1rem;
-  border-bottom: 1px solid var(--secondary);
+  border-bottom: 1px solid var(--dark-1);
 }
 .why_us .heading{
     /* font-size: 1.3rem; */
@@ -27,10 +27,11 @@
 .why_us section .item{
     display: grid;
     letter-spacing: 1px;
-    font-weight: 600;
+    /* font-weight: 600; */
     gap: 2rem;
     padding:  2rem;
     border-radius: 5px;
+    background: var(--dark-1);
 }
 .why_us section .item:hover{
     background: var(--primary-1);
@@ -42,8 +43,8 @@
     width: fit-content;
     font-size: 2rem;
     padding: 1rem;
+    height: fit-content;
     display: grid;
-  
     text-align: center;
     border-radius: 50%;
 }

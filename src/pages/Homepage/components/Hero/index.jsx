@@ -1,27 +1,25 @@
-import React, { useEffect, useRef, useState } from 'react'
-import './homepage.css'
+import React, { useEffect, useRef, useState } from "react";
+import "./hero.css";
 
-const Homepage = () => {
-  const [isInView, setIsInView] = useState(false)
+const Hero = () => {
+  const [isInView, setIsInView] = useState(false);
   const [time, setTime] = useState({
-    days: '',
-    minutes: '',
-    hours: '',
-    seconds: ''
-  })
-  const ref = useRef()
-
-
+    days: "",
+    minutes: "",
+    hours: "",
+    seconds: "",
+  });
+  const ref = useRef();
 
   useEffect(() => {
-    handleScroll()
+    handleScroll();
     startTimer();
-    window.addEventListener('scroll', handleScroll)
-    return () => window.removeEventListener('scroll', handleScroll)
-  }, [])
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   const getTimeDifference = () => {
-  const targetEndTime = new Date("Jul 7, 2023 6:00"); // Target end time
+    const targetEndTime = new Date("Jul 7, 2023 6:00"); // Target end time
 
     const currentTime = new Date().getTime(); // Current time in milliseconds
     const difference = targetEndTime - currentTime; // Time difference in milliseconds
@@ -38,49 +36,56 @@ const Homepage = () => {
     const intervalId = setInterval(() => {
       const timeDiff = getTimeDifference();
       setTime(timeDiff);
-      if (timeDiff.days <= 0 && timeDiff.hours <= 0 && timeDiff.minutes <= 0 && timeDiff.seconds <= 0) {
+      if (
+        timeDiff.days <= 0 &&
+        timeDiff.hours <= 0 &&
+        timeDiff.minutes <= 0 &&
+        timeDiff.seconds <= 0
+      ) {
         clearInterval(intervalId);
         setTime({
-          days:0,
-          hours:0,
-          minutes:0,
-          seconds:0
-        })
+          days: 0,
+          hours: 0,
+          minutes: 0,
+          seconds: 0,
+        });
       }
     }, 1000);
   };
 
   function handleScroll(e) {
-    let rect = ref.current.getBoundingClientRect()
+    let rect = ref.current.getBoundingClientRect();
     if (rect.top - window.innerHeight < 0) {
-      setIsInView(true)
-    }else{
-      setIsInView(false)
-
+      setIsInView(true);
+    } else {
+      setIsInView(false);
     }
   }
 
-
-
   return (
-
-    <div className="homepage">
-
+    <div className="hero">
       <div className="section_1">
-        <h2>The World’s <span>1st ICO</span> Platform That Offers Rewards</h2>
-        <span>The platform helps investors to make easy to purchase and sell their tokens</span>
-        <img src="https://demo.ovatheme.com/cryptlight/wp-content/uploads/2021/08/ilus-bner.png" alt="" />
+        <h2>
+          The World’s <span>1st ICO</span> Platform That Offers Rewards
+        </h2>
+        <span className="sub_header">
+          The platform helps investors to make easy to purchase and sell their
+          tokens
+        </span>
+        <img
+          src="https://demo.ovatheme.com/cryptlight/wp-content/uploads/2021/08/ilus-bner.png"
+          alt=""
+        />
       </div>
 
       <div className="section_2">
         <div className="top">
           <span>Pre-sale is live now</span>
 
-          <div className='timer'>
-
+          <div className="timer">
             <div>
               <span>{time.days}</span>
-              <span >Days</span>
+              <span>Days</span>
             </div>
             <div>
               <span>{time.hours}</span>
@@ -96,11 +101,13 @@ const Homepage = () => {
             </div>
           </div>
         </div>
-        <div className='bottom'>
-
-          <span className='heading'>Pre Sale</span>
-          <div className='progress_bar'>
-            <span className={`${isInView ? ' bar active' : ' bar'}`} ref={ref}></span>
+        <div className="bottom">
+          <span className="heading">Pre Sale</span>
+          <div className="progress_bar">
+            <span
+              className={`${isInView ? " bar active" : " bar"}`}
+              ref={ref}
+            ></span>
             <div>
               <span>Pre Sale</span>
               <span>Pre Sale</span>
@@ -108,12 +115,10 @@ const Homepage = () => {
             </div>
           </div>
         </div>
-        <button className='purchase_btn'>Purchase tokens</button>
-
+        <button className="purchase_btn">Purchase tokens</button>
       </div>
     </div>
+  );
+};
 
-  )
-}
-
-export default Homepage
+export default Hero;

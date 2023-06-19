@@ -34,11 +34,10 @@ color: var(--white);
 .timeline_items .timeline_item::before{
   position: absolute;
   content: "";
-  /* height: calc(100% + 1.7rem); */
   height: 100%;
   top: 0;
   left: 0;
-  border-left: 2px dashed var(--secondary-1);
+  border-left: 2px dashed var(--dark-1);
   }
 
 .timeline_items .timeline_item .timeline_info{
@@ -81,7 +80,7 @@ color: var(--white);
 }
 .roadmap_wrapper .timeline_row:nth-child(2) .timeline_date::before{
   content: "";
-  background: var(--secondary-1);
+  background: var(--dark-1);
 }
 
 .timeline_item .timeline_date::after{
@@ -90,7 +89,7 @@ content: "";
 left: 0;
 bottom: 0;
 width: 100%;
-border-bottom: 2px dashed var(--secondary-1);
+border-bottom: 2px dashed var(--dark-1);
 }
 
 
@@ -143,7 +142,7 @@ border-bottom: 2px dashed var(--secondary-1);
     top: calc(3rem  + 4rem);
     right: 0;
     width: 2px;
-    border-right: 2px dashed var(--secondary-1);
+    border-right: 2px dashed var(--dark-1);
   }
   .roadmap_wrapper .timeline_row:nth-child(2)::after{
     left: -2px;

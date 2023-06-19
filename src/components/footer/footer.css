@@ -5,8 +5,8 @@
     text-align: center;
     margin-top: 1rem;
     padding: 2rem ;
-    color: aliceblue;
-  border-top:1px solid var(--secondary)
+    color: var(--secondary-1);
+  border-top:1px solid var(--dark-1)
 }
 
 @media screen and (min-width:920px) {

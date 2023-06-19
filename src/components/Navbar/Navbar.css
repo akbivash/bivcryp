@@ -1,30 +1,28 @@
-
 nav {
   position: fixed;
   top: 0;
   left: 0;
   z-index: 999;
-  width:100%;
+  width: 100%;
   background: var(--dark-1);
 }
-.nav_wrapper{
+.nav_wrapper {
   position: relative;
   display: flex;
   width: 100%;
   max-width: 1400px;
   gap: 2rem;
   height: 60px;
-margin: 0 auto;
-padding: 0 1rem;
+  margin: 0 auto;
+  padding: 0 1rem;
   align-items: center;
   justify-content: space-between;
 }
-.navbar_left{
+.navbar_left {
   display: flex;
   flex: 2;
   align-items: center;
   justify-content: space-between;
-
 }
 
 /* //logo  */
@@ -33,11 +31,11 @@ padding: 0 1rem;
   letter-spacing: 3px;
   font-size: 1.4rem;
   font-weight: bold;
-  text-decoration:none;
-  color:#fff;
+  text-decoration: none;
+  color: #fff;
 }
 
-ul{
+ul {
   display: flex;
   gap: 2rem;
 }
@@ -47,7 +45,7 @@ ul{
   display: none;
 }
 
-.navbar_right{
+.navbar_right {
   display: flex;
   gap: 1.5rem;
   flex: 1;
@@ -55,27 +53,26 @@ ul{
   justify-content: end;
 }
 
-.navbar_right  .bars{
+.navbar_right .bars {
   display: grid;
   color: var(--primary-1);
   border: none;
   font-size: 1.8rem;
-  transition: .4s;
+  transition: 0.4s;
 }
-.sidebar.active .bars{
-  transition: .4s;
+.sidebar.active .bars {
+  transition: 0.4s;
   z-index: 999;
-
 }
-.navbar_right li{
+.navbar_right li {
   list-style: none;
   cursor: pointer;
-  padding:  7px 10px;
+  padding: 7px 10px;
   border-radius: 5px;
 }
-.navbar_right .buy{
+.navbar_right .buy {
   background: var(--primary);
-  color:#fff;
+  color: #fff;
   display: none;
   min-width: 100px;
   text-align: center;
@@ -88,58 +85,16 @@ ul{
   align-items: center;
 }
 
-@media screen and (min-width:780px) {
-  .navbar_right .buy{
+@media screen and (min-width: 780px) {
+  .navbar_right .buy {
     display: block;
   }
 }
-@media screen and (min-width:920px) {
-  .navbar_right  .bars{
+@media screen and (min-width: 920px) {
+  .navbar_right .bars {
     display: none;
   }
-  .navbar_left .links *{
+  .navbar_left .links * {
     display: block;
   }
-
 }
-
-.sidebar {
-  left: -100%;
-  top: 10vh;
-  z-index: 9999;
-  position: fixed;
-  background: var(--dark);
-  padding: 2rem;
-  width: 100%;
-  max-width: 300px;
-  transition: .4s;
-min-height: 100vh;
-}
-.sidebar .links{
-  display: grid;
-}
-.sidebar.active {
-  left: 0;
-  transition: .4s;
-
-}
-
-.blur.active{
-  position:fixed;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background: rgba(0,0,0,0.4);
-  z-index: 9;
-  transition: .4s;
-  backdrop-filter: blur(2px);
-}
-.sidebar .links *{
-  color: #fff;
-  border-bottom: 1px solid var(--primary-2);
-text-decoration: none;
-padding: 5px;
-
-}
-

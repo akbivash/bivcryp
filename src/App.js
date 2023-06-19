@@ -1,18 +1,12 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import './index.css'
-import Navbar from './components/Navbar/Navbar'
-import Homepage from './pages/homepage/Homepage'
-import { BrowserRouter, Router, Route, Routes } from 'react-router-dom'
-import About from './pages/about/About'
-import Roadmap from './pages/roadmap/Roadmap'
-import WhyUs from './pages/whyUs/index'
-import Footer from './components/footer/Footer'
-import Sales from './pages/sales/Sales'
-import Contact from './pages/contact/Contact'
-import Faq from './pages/faq/Faq'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import Navbar from './components/Navbar'
+import Footer from './components/Footer'
+import Homepage from './pages/Homepage'
+
 
 const App = () => {
-
 
   return (
     <>
@@ -20,27 +14,9 @@ const App = () => {
         <div className="app">
           <Navbar />
           <div className="app_main">
-            <div id="homepage">
-              <Homepage />
-            </div>
-            <div id="about">
-              <About />
-            </div>
-            <div id="sales">
-              <Sales />
-            </div>
-            <div id="why_us">
-              <WhyUs />
-            </div>
-            <div id="roadmap">
-              <Roadmap />
-            </div>
-            <div id="faq">
-              <Faq />
-            </div>
-            <div id="contact">
-              <Contact />
-            </div>
+            <Routes>
+              <Route path='/' element={<Homepage />} />
+            </Routes>
             <Footer />
           </div>
         </div>

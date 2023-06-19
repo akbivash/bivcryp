@@ -51,7 +51,6 @@
   display: grid;
   gap: 1rem;
   padding: 0 1rem;
-  font-weight: 600;
 }
 .faq_container section .q_a {
   display: grid;
