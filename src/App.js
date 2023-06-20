@@ -12,12 +12,12 @@ const App = () => {
     <>
       <BrowserRouter>
         <div className="app">
-          {/* <Navbar /> */}
+          <Navbar />
           <div className="app_main">
             <Routes>
               <Route path='/' element={<Homepage />} />
             </Routes>
-            {/* <Footer /> */}
+            <Footer />
           </div>
         </div>
       </BrowserRouter>
