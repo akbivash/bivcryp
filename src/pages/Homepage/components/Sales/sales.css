@@ -2,30 +2,30 @@
     color:var(--white);
     display: grid;
     gap: 3rem;
-    padding: 1rem;
+    padding: var(--padding-sm);
+    margin-top: var(--mt-lg);
+
 }
 .sales .heading{
     display: grid;
     gap: 1.5rem;
-    font-size: 1.4rem;
 }
-.sales .heading span{
+.sales .heading h2{
     position: relative;
     padding-left: 110px;
-    letter-spacing: 2px;
-    font-weight: 600;
+    text-transform: uppercase;
 }
-.sales .heading span::before{
+.sales .heading h2::before{
     position: absolute;
     content: "";
-    width: 100px;
+    width: 110px;
     height: 1px;
     background: #fff;
     bottom: 4px;
     left: 0px;
 }
 .sales .heading h1{
-    /* font-size: ; */
+    font-size: 2.5rem;
 }
 .sales .section_1{
     display: grid;
@@ -62,7 +62,8 @@ width: 100%;
 @media screen and (min-width:780px) {
     .sales{
         gap: 4rem;
-        /* padding-bottom: 2rem; */
+    padding: var(--padding-lg);
+
     }
     .sales .section_1{
         grid-template-columns: repeat(3,1fr);

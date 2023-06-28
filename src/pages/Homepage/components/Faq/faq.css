@@ -1,10 +1,11 @@
 .faq_container {
   color: var(--white);
   display: grid;
-  place-items: center;
+  /* place-items: center; */
+  margin-top: var(--mt-sm);
 
   gap: 3rem;
-  padding: 1rem;
+  padding: var(--padding-sm);
   background: var(--dark);
 }
 .faq_container section {
@@ -13,6 +14,7 @@
 }
 .faq_container .heading {
   display: grid;
+  
   gap: 2rem;
   font-weight: 600;
   font-size: 1.2rem;
@@ -21,7 +23,7 @@
   position: relative;
   padding-left: 110px;
 }
-.faq_container .heading span::before {
+/* .faq_container .heading span::before {
   position: absolute;
   content: "";
   width: 100px;
@@ -29,7 +31,7 @@
   left: 0;
   bottom: 3px;
   background: #fff;
-}
+} */
 .faq_container section .faq_items.mobile {
   display: grid;
   gap: 2rem;
@@ -42,6 +44,7 @@
 .faq_container .faq_topic {
   padding: 10px 0;
   cursor: pointer;
+  font-weight: 500;
   border-bottom: 2px solid var(--secondary);
 }
 .faq_container .faq_topic.active {
@@ -62,6 +65,8 @@
   align-items: center;
   cursor: pointer;
   padding-bottom: 1rem;
+  font-weight: 500;
+
   border-bottom: 1px solid var(--secondary);
 }
 .faq_container section .q_a .q i {
@@ -73,6 +78,8 @@
   transition: 0.3s;
   height: 0;
   overflow: hidden;
+  font-weight: 500;
+
 }
 .faq_container section .q_a .a.active {
   transition: 0.3s;
@@ -91,6 +98,12 @@
   margin-top: 2rem;
   width: 100%;
   max-width: 500px;
+}
+
+@media screen and (min-width:780px) {
+ .faq_container{
+  padding: var(--padding-lg);
+ }
 }
 
 @media screen and (min-width: 1020px) {

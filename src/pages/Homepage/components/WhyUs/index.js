@@ -7,9 +7,9 @@ import {FcDataProtection} from 'react-icons/fc'
 const index = () => {
   return (
     <div className='why_us'>
-<div className="heading">
+<h2 className="heading">
 WHY CHOOSE OUR TOKEN
-</div>
+</h2>
 <section>
   <div className="item">
     <i><FaMobileAlt/></i>

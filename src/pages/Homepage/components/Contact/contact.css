@@ -2,14 +2,22 @@
     color: var(--white);
     display: grid;
     gap: 3rem;
-    padding: 1rem;
+    padding: var(--padding-sm);
+    margin-top: var(--mt-lg);
+
 }
-.contact .heading{
-    text-align: center;
+.contact .header{
+    /* text-align: center; */
     display: grid;
     gap: 1rem;
     font-weight: 600;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
+    /* position: relative; */
+}
+.contact .heading{
+    position: relative;
+    padding-left: 110px;
+    text-align: start;
 }
 .contact .info{
     display: grid;
@@ -17,12 +25,11 @@
     font-size: 1.2rem;
     font-weight: bold;
     letter-spacing: 1px;
-    padding: 0 2rem;
     max-width: 1200px;
 }
 .contact .info span{
     display: flex;
-    gap: 1rem;
+    gap: 10px;
     align-items: center;
 }
 .contact .info span i{
@@ -43,6 +50,7 @@ width: 100%;
 }
 .contact form input, textarea{
     padding: 1rem;
+    width: 100%;
     outline: none;
     border:none;
     background: var(--dark-1);

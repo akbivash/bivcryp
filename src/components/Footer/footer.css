@@ -1,7 +1,8 @@
 .footer{
     padding: 2rem ;
-    margin-top: 1rem;
     text-align: center;
+    margin-top: var(--mt-lg);
+
     color: var(--secondary-1);
     border-top: 2px solid var(--dark-1);
 }

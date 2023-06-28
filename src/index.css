@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
 :root{
   --primary:rgb(64, 159, 203);
@@ -8,14 +9,19 @@
   --dark:rgb(6, 1, 18);
   --dark-1:rgb(21, 22, 36);
   --white:rgb(204, 205, 205);
+  --padding-sm:10px;
+  --padding-lg:1rem;
+  --mt-lg:4rem;
+  --mt-sm:2rem;
 }
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto';
-    
+  
+    font-family: 'Open Sans', sans-serif;
+/* font-family: 'Roboto', sans-serif; */
 }
 
 body{
@@ -27,10 +33,12 @@ body{
   max-width: 1400px;
   display:grid;
 margin: 0 auto;
+/* padding:10px; */
 padding-top: 12vh;
+
 }
 @media screen and (min-width:920px) {
- body .homepage,
+ body .hero,
  body .about,
  body .sales,
  body #roadmap,
@@ -49,4 +57,23 @@ li{
 }
 a{
   cursor:pointer;
+}
+
+.roadmap .heading::before,
+.about .heading::before,
+.contact .heading::before,.faq_container .heading span::before{
+  position: absolute;
+  content: "";
+  width: 100px;
+  height: 2px;
+  left: 0;
+  bottom: 3px;
+  background: #fff;
+
+}
+
+@media screen and (min-width:780px) {
+  .about,.faq,.contact,.why_us,.roadmap,.sales, .hero{
+    padding: var(--padding-lg);
+  }
 }

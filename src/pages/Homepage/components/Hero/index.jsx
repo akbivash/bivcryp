@@ -85,7 +85,7 @@ const Hero = () => {
           <div className="timer">
             <div>
               <span>{time.days}</span>
-              <span>Days</span>
+              <span>Days   </span>
             </div>
             <div>
               <span>{time.hours}</span>

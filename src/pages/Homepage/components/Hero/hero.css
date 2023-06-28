@@ -1,7 +1,7 @@
 .hero {
   width: 100%;
   color: var(--white);
-  padding: 1rem;
+  padding: var(--padding-sm);
 }
 .hero .section_1 {
   padding-top: 2rem;
@@ -9,8 +9,8 @@
   gap: 2rem;
 }
 .hero .section_1 h2 {
-  font-size: 3rem;
-  letter-spacing: 2px;
+  font-size: 2.5rem;
+  font-weight: 700;
 }
 .hero .section_1 h2 span {
   color: var(--primary-1);
@@ -18,6 +18,7 @@
 
 .hero .section_1 .sub_header{
   font-size: 1.3rem;
+  font-weight:500;
 }
 .hero .section_1 img {
   margin-top: 1rem;
@@ -44,11 +45,14 @@
 }
 .hero .section_2 .timer {
   display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
   gap: 1rem;
 }
 .hero .section_2 .timer div {
   display: grid;
-  gap: 1rem;
+  gap: 10px;
   place-items: center;
 }
 .hero .section_2 .timer div span:nth-child(1) {
@@ -65,7 +69,7 @@
   display: grid;
   gap: 2rem;
   text-align: center;
-  padding: 2rem 1rem;
+  /* padding: 2rem 1rem; */
 }
 .hero .section_2 .bottom .progress_bar {
   height: 100%;
@@ -129,9 +133,12 @@
   font-size: 1.2rem;
   margin: 2rem auto;
 }
-@media screen and (min-width: 760px) {
+@media screen and (min-width: 780px) {
   .hero .section_2 .purchase_btn {
-    padding: 1.3rem 3rem;
+    padding: 1.1rem 3rem;
+  }
+  .hero .section_1 {
+    padding-top: 4rem;
   }
 
 }

@@ -6,8 +6,8 @@ import { FiSend } from 'react-icons/fi'
 const Contact = () => {
   return (
     <div className='contact'> 
-<div className="heading">
-    <span>CONTACT</span>
+<div className="header">
+    <span className='heading'>CONTACT</span>
     <h1>Contact BivCryp</h1>
 </div>
 <div className="info">
@@ -25,7 +25,7 @@ const Contact = () => {
         <input type="number" placeholder='Number' />
     </div>
     <div className="field">
-        <textarea   cols="30" rows="10" placeholder='Message...' ></textarea>
+        <textarea   rows='5'  placeholder='Message...' ></textarea>
     </div>
     <button>Submit your message</button>
 </form>

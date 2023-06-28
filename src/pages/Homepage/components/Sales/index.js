@@ -5,7 +5,7 @@ const Sales = () => {
   return (
     <div className='sales'>
         <div className="heading">
-            <span> ICO Cryptlight Token</span>
+            <h2> ICO Cryptlight Token</h2>
             <h1>ICO Tokens Details & Sale Tokens.</h1>
         </div>
         <section className='section_1'>
