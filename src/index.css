@@ -33,10 +33,13 @@ body{
   max-width: 1400px;
   display:grid;
 margin: 0 auto;
-/* padding:10px; */
-padding-top: 12vh;
+padding-top:12vh;
 
 }
+.about,.faq,.contact,.why_us,.roadmap,.sales, .hero{
+    padding: var(--padding-lg);
+  }
+
 @media screen and (min-width:920px) {
  body .hero,
  body .about,
@@ -73,7 +76,5 @@ a{
 }
 
 @media screen and (min-width:780px) {
-  .about,.faq,.contact,.why_us,.roadmap,.sales, .hero{
-    padding: var(--padding-lg);
-  }
+ 
 }

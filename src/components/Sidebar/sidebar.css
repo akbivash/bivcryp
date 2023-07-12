@@ -1,6 +1,6 @@
 .sidebar {
   left: -100%;
-  top: 10vh;
+  top: 60px;
   z-index: 9999;
   position: fixed;
   background: var(--dark);

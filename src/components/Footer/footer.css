@@ -1,8 +1,12 @@
 .footer{
     padding: 2rem ;
     text-align: center;
-    margin-top: var(--mt-lg);
-
     color: var(--secondary-1);
     border-top: 2px solid var(--dark-1);
+}
+
+@media screen and (max-width:920px) {
+    .footer{
+      margin-top: 1rem;
+    }
 }

@@ -2,17 +2,14 @@
     color: var(--white);
     display: grid;
     gap: 3rem;
-    padding: var(--padding-sm);
     margin-top: var(--mt-lg);
-
+    /* background: var(--dark); */
 }
 .contact .header{
-    /* text-align: center; */
     display: grid;
     gap: 1rem;
     font-weight: 600;
     font-size: 1.2rem;
-    /* position: relative; */
 }
 .contact .heading{
     position: relative;
